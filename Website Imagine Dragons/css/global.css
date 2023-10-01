@@ -4,11 +4,16 @@ body {
     font-family: 'Roboto', sans-serif;	font-weight: 800;
     color: white;
 }
+/* css for header and nav bar */
 
 header{
     background-color: black;
     padding-right: 5%;
     padding-left: 5%;
+}
+
+.active{
+    text-decoration: underline;
 }
 
 nav a {
@@ -41,6 +46,66 @@ nav a {
     height: 40px;
 }
 
+/* css for the main image and logo in center */
+.main-image-logo{
+    position: relative;
+    text-align: center;
+}
+
+.main-image{
+    width: 100%;
+}
+
+.centered-logo
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* index album area */
+.grad {
+    background-image: linear-gradient(#000000, #3D5F5F, #0000);
+    height: 550px;
+  }
+.index-album{
+    flex: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+}
+.index-album-image:hover{
+    transform: scale(1.2);
+  }
+.album-title{
+    font-size: 40px;
+}
+
+/*index about area */
+.index-about {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.ticket-button {
+    padding: 15px 200px;
+    font-size: 32px;
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+  }
+  
+.about-text {
+    text-align: left; /* Align text to the left */
+    font-size: 32px;
+    margin-right: 20px; 
+    max-width: 50%;
+  }
+
 @media (max-width: 800px) {
  .header-image{
     display: none;
@@ -50,4 +115,52 @@ nav a {
     margin: 0px 20px;  
     margin-left: 100px;
 }
+.index-main-image{
+    width: 50%;
 }
+
+.centered-logo
+{
+    width: 50%;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album-cover{
+    width: 50%;
+    height: 50%;
+}
+.index-album{
+    flex: content;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.about-image{
+    display: none;
+}
+.about-text {
+    text-align: left; /* Align text to the left */
+    font-size: 15px;
+    text-align: center;
+  }
+  .ticket-button {
+    padding: 10px;
+    font-size: 10px;
+    width: 50%;
+    background-color: blue;
+    color: white;
+  }
+  .index-about {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+}
+
